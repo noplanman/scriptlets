@@ -16,8 +16,8 @@
  *   wan-ip-history.csv: File to log all IP changes to.
  */
 
-// Make sure we have a valid timezone set.
-date_default_timezone_set('UTC');
+// Make sure we have a valid timezone set. (Europe/Zurich)
+date_default_timezone_set('Europe/Zurich');
 
 $bot_token = isset($argv[1]) ? $argv[1] : (isset($_SERVER['HTTP_X_BOT_TOKEN']) ? $_SERVER['HTTP_X_BOT_TOKEN'] : null);
 $chat_id   = isset($argv[2]) ? $argv[2] : (isset($_SERVER['HTTP_X_CHAT_ID']) ? $_SERVER['HTTP_X_CHAT_ID'] : null);
